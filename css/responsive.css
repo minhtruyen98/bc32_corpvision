@@ -41,6 +41,14 @@
     .carousel-corp .carousel-item {
         height: 700px;
     }
+    /*============= responsive cho footer ================*/
+    .mb-5 {
+        margin-bottom: 48px !important;
+    }
+
+    .footer__item h3 {
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -86,6 +94,10 @@
     .carousel-corp .carousel-item {
         height: 600px;
     }
+    /*============= responsive cho footer ================*/
+    .footer__heading h2{
+        font-size: 3rem;
+    }
 }
 
 @media screen and (max-width: 415px) {
@@ -100,6 +112,22 @@
 
     .carousel-corp .carousel-item {
         height: 550px;
+    }
+
+    .footer__item p {
+        font-size: 1.7rem;
+    }
+
+    .footer__item li {
+        font-size: 1.7rem;
+    }
+
+    .footer__item li a {
+        font-size: 1.7rem;
+    }
+    .footer__logo i,
+    .footer__brand h1 {
+        font-size: 2.6rem;
     }
 }
 
@@ -116,5 +144,13 @@
     /*============= responsive cho carousel ================*/
     .carousel-corp .carousel-caption h3 {
         font-size: 2.7rem;
+    }
+    /*============= responsive cho footer ================*/
+    .footer__heading h2{
+        font-size: 2.4rem;
+    }
+
+    .footer__form i  {
+        padding: 0 12px;
     }
 }

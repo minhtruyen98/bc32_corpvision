@@ -2,6 +2,8 @@
     --primary-color: #009f4d;
     --white-color:#ffffff;
     --sub-title-color:#7e7d7d;
+    --background-dark: #151421;
+    --button-color: #00A63F;
 }
 
 [data-theme = "light"] {
@@ -47,12 +49,16 @@ a,ul {
     list-style: none;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .button {
     padding: 15px 50px;
     border-radius: 10px;
     border: none;
     color: var(--white-color);
-    background-color: var(--primary-color);
+    background-color: var(--button-color);
     font-weight: 600;
     font-size: 1.6rem;
     text-transform: capitalize;
