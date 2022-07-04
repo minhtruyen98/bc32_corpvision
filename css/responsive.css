@@ -1,8 +1,16 @@
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1280px) {
+    /*============= responsive cho carousel ================*/
+    .carousel-corp .carousel-caption h3 {
+        font-size: 5.5rem;
+        max-width: 800px;
+    }
+}
+@media screen and (max-width: 991.98px) {
     /*============= responsive cho header ================*/
+        /*khi menu chưa mở thì phần header search phải ẩn đi*/
     .header .navbar-toggler:not([aria-expanded]) ~ .header__right,
     .header .navbar-toggler.collapsed ~ .header__right {
-        visibility: hidden;
+        display: none;
     }
 
     /* .header .navbar-collapse {
@@ -26,10 +34,33 @@
         text-align: center;
         width: 100%;
     }
+    /*============= responsive cho carousel ================*/
+    .carousel-corp .carousel-caption h3 {
+        font-size: 5rem;
+    }
+    .carousel-corp .carousel-item {
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    /*============= responsive cho carousel ================*/
+    .carousel-corp .carousel-caption h3 {
+        font-size: 4.5rem;
+    }
+
+    .carousel-corp .carousel-caption p {
+        font-size: 1.8rem;
+    }
+
+    .carousel-corp .carousel-item {
+        height: 650px;
+    }
 
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575.98px) {
+    /*============= responsive cho header ================*/
     .header__logo i,
     .header__brand h1 {
         font-size: 2.6rem;
@@ -37,5 +68,53 @@
 
     .header__brand span {
         font-size: 1.3rem;
+    }
+
+    /*============= responsive cho carousel ================*/
+    .carousel-corp .carousel-item .container {
+        width: 100%;
+    }
+
+    .carousel-corp .carousel-caption h3 {
+        font-size: 4rem;
+    }
+    
+    .carousel-corp .carousel-caption p {
+        font-size: 1.6rem;
+    }
+
+    .carousel-corp .carousel-item {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    /*============= responsive cho carousel ================*/
+    .carousel-corp .carousel-caption h3 {
+        font-size: 3.2rem;
+    }
+
+    .button {
+        padding: 12px 30px;
+    }
+
+    .carousel-corp .carousel-item {
+        height: 550px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    /*============= responsive cho header ================*/
+    .header .header__right {
+        order: 0;
+        display: none;
+    }
+    .header .navbar-collapse.collapsing ~ .header__right,
+    .header .navbar-collapse.show ~ .header__right {
+        display: flex;
+    }
+    /*============= responsive cho carousel ================*/
+    .carousel-corp .carousel-caption h3 {
+        font-size: 2.7rem;
     }
 }
