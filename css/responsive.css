@@ -42,12 +42,32 @@
         height: 700px;
     }
     /*============= responsive cho footer ================*/
-    .mb-5 {
+    .footer .mb-5 {
         margin-bottom: 48px !important;
     }
 
     .footer__item h3 {
         font-size: 2rem;
+    }
+    /*============= responsive cho title ================*/
+    .news .col-12:not(:last-of-type) {
+        margin-bottom: 48px;
+    }
+
+    .title p {
+        font-size: 1.4rem;
+    }
+    
+    .title h3 {
+        font-size: 3.2rem;
+    }
+
+    .news .title {
+        margin-bottom: 40px;
+    }
+
+    .section {
+        padding: 72px 0;
     }
 }
 
@@ -63,6 +83,10 @@
 
     .carousel-corp .carousel-item {
         height: 650px;
+    }
+    /*============= responsive cho title ================*/
+    .section {
+        padding: 56px 0;
     }
 
 }
@@ -98,6 +122,15 @@
     .footer__heading h2{
         font-size: 3rem;
     }
+    /*============= responsive cho title ================*/
+    .title h3 {
+        font-size: 3rem;
+    }
+
+    .news .title {
+        margin-bottom: 24px;
+    }
+
 }
 
 @media screen and (max-width: 415px) {
@@ -129,6 +162,10 @@
     .footer__brand h1 {
         font-size: 2.6rem;
     }
+    /*============= responsive cho title ================*/
+    .title h3 {
+        font-size: 2.6rem;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -152,5 +189,14 @@
 
     .footer__form i  {
         padding: 0 12px;
+    }
+
+    /*============= responsive cho title ================*/
+    .title h3 {
+        font-size: 2.4rem;
+    }
+
+    .news .card-body .card-title {
+        font-size: 1.8rem;
     }
 }
