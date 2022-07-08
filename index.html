@@ -26,6 +26,11 @@
     <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -38,7 +43,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <!-- Brand -->
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" translate="no" href="#">
                     <div class="header__logo">
                         <i class="fa-solid fa-align-right"></i>
                     </div>
@@ -103,12 +108,12 @@
                 <div class="carousel-item active">
                     <img src="./img/b1.jpg" alt="" />
                     <div class="carousel-caption container">
-                        <h3>We will solve your issues our vision to your future</h3>
-                        <p>
+                        <h3 class="animate__animated animate__flipInX animate__delay-1s">We will solve your issues our vision to your future</h3>
+                        <p class="animate__animated animate__fadeInDown">
                             Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
                             dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
                         </p>
-                        <button class="button">Learn More</button>
+                        <button class="button animate__animated animate__fadeInUp animate__delay-1s">Learn More</button>
                     </div>
                     <div class="carousel-overlay"></div>
                 </div>
@@ -120,19 +125,19 @@
                             Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
                             dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
                         </p>
-                        <button class="button">Get start</button>
+                        <button class="button animate__animated animate__fadeInDown animate__delay-1s">Get start</button>
                     </div>
                     <div class="carousel-overlay"></div>
                 </div>
                 <div class="carousel-item">
                     <img src="./img/b3.jpg" alt="" />
                     <div class="carousel-caption container">
-                        <h3>Digital transformation driven by technology</h3>
-                        <p>
+                        <h3 class="animate__animated animate__fadeInUp animate__delay-1s">Digital transformation driven by technology</h3>
+                        <p class="animate__animated animate__fadeInUp">
                             Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
                             dolore magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
                         </p>
-                        <button class="button">Learn More</button>
+                        <button class="button animate__animated animate__fadeInDown animate__delay-1s">Learn More</button>
                     </div>
                     <div class="carousel-overlay"></div>
                 </div>
@@ -159,10 +164,12 @@
             <div class="carousel-shape">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
                     <path fill-opacity="1">
-                      <animate attributeName="d" dur="20000ms" repeatCount="indefinite" values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
-                        M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;"></animate>
+                        <animate attributeName="d" dur="20000ms" repeatCount="indefinite"
+                            values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+                        M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;">
+                        </animate>
                     </path>
-                  </svg>
+                </svg>
             </div>
         </div>
     </section>
@@ -187,8 +194,88 @@
 
     </section>
     <!--==================== FEEDBACK =========================-->
-    <section class="feedback">
-
+    <section class="feedback section">
+        <div class="feedback__content container">
+            <div class="title">
+                <p>HAPPY CLIENTS FEEDBACK</p>
+                <h3>Reviews and Testimonials</h3>
+            </div>
+            <div class="owl-carousel">
+                <div class="feedback__slide">
+                    <blockquote cite="https://wp.w3layouts.com/corpvision/" class="feeadback__comment">
+                        <q>
+                            Lorem ipsum dolor sit amet elit. Velit beatae laudantium voluptate rem ullam dolore nisi
+                            voluptatibus esse quasi, doloribus tempora.
+                            Dolores molestias adipisci dolo amet!. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Esse architecto est ea sunt eligendi cum?
+                        </q>
+                    </blockquote>
+                    <div class="feedback__author d-flex align-items-center justify-content-center mt-2">
+                        <div class="feedback_img">
+                            <img src="./img/team1.jpg" alt="John wilson img" class="img-fluid" />
+                        </div>
+                        <div class="feedback__author-desc">
+                            <h4>John wilson</h4>
+                            <span>student</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback__slide">
+                    <blockquote cite="https://wp.w3layouts.com/corpvision/" class="feeadback__comment">
+                        <q>
+                            Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                            Dolores molestias adipisci dolo amet!.
+                        </q>
+                    </blockquote>
+                    <div class="feedback__author d-flex align-items-center justify-content-center mt-2">
+                        <div class="feedback_img">
+                            <img src="./img/team2.jpg" alt="Julia sakura img" class="img-fluid" />
+                        </div>
+                        <div class="feedback__author-desc">
+                            <h4>Julia sakura</h4>
+                            <span>student</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback__slide">
+                    <blockquote cite="https://wp.w3layouts.com/corpvision/" class="feeadback__comment">
+                        <q>
+                            Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                            Dolores molestias adipisci dolo amet!.
+                        </q>
+                    </blockquote>
+                    <div class="feedback__author d-flex align-items-center justify-content-center mt-2">
+                        <div class="feedback_img">
+                            <img src="./img/team3.jpg" alt="Roy Linderson img" class="img-fluid" />
+                        </div>
+                        <div class="feedback__author-desc">
+                            <h4>Roy Linderson</h4>
+                            <span>student</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback__slide">
+                    <blockquote cite="https://wp.w3layouts.com/corpvision/" class="feeadback__comment">
+                        <q>
+                            Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                            Dolores molestias adipisci dolo amet!.
+                        </q>
+                    </blockquote>
+                    <div class="feedback__author d-flex align-items-center justify-content-center mt-2">
+                        <div class="feedback_img">
+                            <img src="./img/team4.jpg" alt="Smith Johnson img" class="img-fluid" />
+                        </div>
+                        <div class="feedback__author-desc">
+                            <h4>Smith Johnson</h4>
+                            <span>student</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!--==================== NEWS =========================-->
     <section class="news section">
@@ -274,7 +361,7 @@
     <footer class="footer">
         <div class="footer__contact container text-center">
             <div class="footer__heading">
-                <h2>Let’s find out how to work together</h2>
+                <h2>Let's find out how to work together</h2>
                 <p>Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore nisi esse quasi, sit amet. Lorem ipsum dolor sit amet elit.</p>
             </div>
             <form class="footer__form">
@@ -288,7 +375,7 @@
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
                     <div class="footer__item">
-                        <a class="footer-brand" href="#">
+                        <a class="footer-brand" translate="no" href="#">
                             <div class="footer__logo">
                                 <i class="fa-solid fa-align-right"></i>
                             </div>
@@ -363,7 +450,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
+    <!-- Owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                items: 1,
+                dots: true
+            });
+        });
+    </script>
     <!-- base js -->
     <script src="./javascript/base.js"></script>
     <script>

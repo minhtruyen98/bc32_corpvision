@@ -1,3 +1,6 @@
+body {
+    background-color: var(--background-color);
+}
 /*=================== Header =================*/
 .header {
     border-bottom: 1px solid rgba(231, 231, 231, 0.18);
@@ -252,6 +255,7 @@
     color: white;
     height: 50vh;
     padding: 10vw;
+    min-width: 250px;
 }
 .search__form input::placeholder {
     color: white;
@@ -332,18 +336,72 @@
 .carousel-corp .carousel-shape svg {
     fill: var(--background-color)
 }
+/*=================== News =================*/
+.feedback {
+    background-color: var(--bg-grey-color);
+}
 
+.feedback .owl-dots {
+    text-align: center;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.feedback .owl-dots button {
+    outline: none;
+    padding: 0 8px !important;
+}
+
+.feedback .owl-dots button span{
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #213364;
+    opacity: 0.5;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.feedback .owl-dots button:hover span,
+.feedback .owl-dots button.active span{
+    opacity: 1;
+    transform: scale(1.5);
+}
+
+.feedback__slide {
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+.feedback__slide blockquote {
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--text-color);
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+.feedback_img {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.feedback__author-desc h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--title-color);
+}
+
+.feedback__author-desc span {
+    font-size: 1.7rem;
+    color: var(--text-color);
+}
 /*=================== News =================*/
 .section {
     padding: 96px 0;
-}
-
-.news {
-    background-color: var(--background-color);
-}
-
-.news .title {
-    margin-bottom: 48px;
 }
 
 .news .card {
