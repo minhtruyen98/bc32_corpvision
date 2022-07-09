@@ -84,7 +84,9 @@ a:hover {
 
 .title p {
     font-size: 1.4rem;
+    letter-spacing: 1px;
     font-weight: 600;
+    margin-bottom: 4px;
     color:var(--sub-title-color);
 }
 
@@ -92,4 +94,5 @@ a:hover {
     font-size: 3.5rem;
     font-weight: 700;
     color: var(--title-color);
+    margin: 0;
 }
