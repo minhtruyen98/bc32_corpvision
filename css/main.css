@@ -752,3 +752,49 @@ body {
     font-weight: 600;
     line-height: 1;
 }
+/* about */
+.about img{
+    border-radius: 10px;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+.about .img-down{
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+.about .title{
+    font-size: 15px;
+    font-weight: 600;
+    color: grey;
+    letter-spacing: 1px;
+    line-height: 30px;
+    margin-bottom: 0px !important;
+    margin-top: 30px;
+
+}
+.about h2{
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 50px;
+}
+.about .content{
+    color: grey;
+    font-weight: 400;
+}
+.about li{
+    list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 50px;
+
+}
+.about li a{
+    color: black;
+}
+.about li a i{
+    background-color: #33b271;
+    border-radius: 50px;
+    color: white;
+    padding: 2px;
+}
