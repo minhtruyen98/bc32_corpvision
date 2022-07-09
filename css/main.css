@@ -336,7 +336,73 @@ body {
 .carousel-corp .carousel-shape svg {
     fill: var(--background-color)
 }
-/*=================== News =================*/
+/*=================== skill =================*/
+.skill .title {
+    margin-bottom: 24px;
+}
+
+.skill .skill__img {
+    height: auto;
+}
+
+.skill .skill__img img {
+    height: 100%;
+    border-radius: 8px;
+}
+
+.skill .skill__progress-group:not(:last-of-type) {
+    margin-bottom: 30px;
+}
+
+.skill .skill__progress-group .skill__progress-title {
+    display: flex;
+    font-size: 1.8rem;
+    color: var(--title-color);
+    justify-content: space-between;
+    width: calc(var(--progress-bar)*1%);
+}
+
+.skill .skill__progress .progress {
+    position: relative;
+    height: 4px;
+    overflow: unset;
+    background-color: var(--bg-grey-color);
+    color: var(--bar-color);
+}
+
+.skill .skill__progress .progress::before,
+.skill .skill__progress .progress::after {
+    content: "";
+    position: absolute;
+    left: calc(var(--progress-bar)*1%);
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    display: block;
+    border-radius: 50%;
+}
+
+.skill .skill__progress .progress::after {
+    width: 13px;
+    height: 13px;
+    border: 3px solid var(--color);
+    background-color: var(--background-color);
+}
+
+.skill .skill__progress .progress::before {
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--color);
+    opacity: 0.5;
+}
+
+.skill .skill__progress .progress-bar{
+    width: calc(var(--progress-bar)*1%);
+    border-top-left-radius: 3px ;
+    border-bottom-left-radius: 3px ;
+    background-image: var(--bar-color);
+}
+
+/*=================== feedback =================*/
 .feedback {
     background-color: var(--bg-grey-color);
 }

@@ -41,6 +41,10 @@
     .carousel-corp .carousel-item {
         height: 700px;
     }
+    /*============= responsive cho skill ================*/
+    .skill .col-12:not(:last-of-type) {
+        margin-bottom: 48px;
+    }
     /*============= responsive cho footer ================*/
     .footer .mb-5 {
         margin-bottom: 48px !important;
@@ -69,6 +73,7 @@
     .section {
         padding: 72px 0;
     }
+    
 }
 
 @media screen and (max-width: 767.98px) {
@@ -83,6 +88,11 @@
 
     .carousel-corp .carousel-item {
         height: 650px;
+    }
+
+    /*============= responsive cho skill ================*/
+    .skill .col-12:not(:last-of-type) {
+        margin-bottom: 24px;
     }
     /*============= responsive cho title ================*/
     .section {
