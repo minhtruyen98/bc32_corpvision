@@ -1,6 +1,7 @@
 body {
     background-color: var(--background-color);
 }
+
 /*=================== Header =================*/
 .header {
     border-bottom: 1px solid rgba(231, 231, 231, 0.18);
@@ -68,7 +69,7 @@ body {
 }
 
 .header.active .nav-item.show .nav-link,
-.header.active .nav-item:hover .nav-link ,
+.header.active .nav-item:hover .nav-link,
 .header.active .nav-item.active .nav-link {
     color: var(--title-color);
 }
@@ -83,8 +84,8 @@ body {
 }
 
 .header .nav-item.show .nav-link,
-.header .nav-item:hover .nav-link ,
-.header .nav-item.active .nav-link{
+.header .nav-item:hover .nav-link,
+.header .nav-item.active .nav-link {
     opacity: 1;
     color: var(--white-color);
 }
@@ -160,13 +161,14 @@ body {
     display: block;
 }
 
-.header .navbar-toggler[aria-expanded] .close-icon{
+.header .navbar-toggler[aria-expanded] .close-icon {
     display: block;
 }
 
-.header .navbar-toggler.collapsed .close-icon{
+.header .navbar-toggler.collapsed .close-icon {
     display: none;
 }
+
 .header .navbar-toggler.collapsed .bar-icon {
     display: block;
 }
@@ -213,7 +215,7 @@ body {
     color: white;
 }
 
-.header.active .header__theme .moon-icon{
+.header.active .header__theme .moon-icon {
     color: var(--title-color);
 }
 
@@ -248,7 +250,7 @@ body {
 }
 
 .search__form input {
-    font-size: min(10vw,5.4rem);
+    font-size: min(10vw, 5.4rem);
     background-color: unset;
     outline: none;
     border: none;
@@ -257,13 +259,16 @@ body {
     padding: 10vw;
     min-width: 250px;
 }
+
 .search__form input::placeholder {
     color: white;
 }
+
 /*=================== Carousel =================*/
 .carousel-corp .carousel-item {
     height: 800px;
 }
+
 .carousel-corp .carousel-item img {
     width: 100%;
     height: 100%;
@@ -314,6 +319,7 @@ body {
 .carousel-corp .carousel-control-prev {
     right: 95px;
 }
+
 .carousel-corp .carousel-control-next i,
 .carousel-corp .carousel-control-prev i {
     color: var(--title-color);
@@ -336,6 +342,7 @@ body {
 .carousel-corp .carousel-shape svg {
     fill: var(--background-color)
 }
+
 /*=================== skill =================*/
 .skill .title {
     margin-bottom: 24px;
@@ -395,10 +402,10 @@ body {
     opacity: 0.5;
 }
 
-.skill .skill__progress .progress-bar{
+.skill .skill__progress .progress-bar {
     width: calc(var(--progress-bar)*1%);
-    border-top-left-radius: 3px ;
-    border-bottom-left-radius: 3px ;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
     background-image: var(--bar-color);
 }
 
@@ -419,7 +426,7 @@ body {
     padding: 0 8px !important;
 }
 
-.feedback .owl-dots button span{
+.feedback .owl-dots button span {
     display: block;
     width: 10px;
     height: 10px;
@@ -428,8 +435,9 @@ body {
     border-radius: 50%;
     transition: all 0.3s;
 }
+
 .feedback .owl-dots button:hover span,
-.feedback .owl-dots button.active span{
+.feedback .owl-dots button.active span {
     opacity: 1;
     transform: scale(1.5);
 }
@@ -465,6 +473,7 @@ body {
     font-size: 1.7rem;
     color: var(--text-color);
 }
+
 /*=================== News =================*/
 .section {
     padding: 96px 0;
@@ -502,6 +511,7 @@ body {
     font-size: 1.7rem;
     color: #999999;
 }
+
 .news .card-body .card-text a:hover {
     color: #999999;
 }
@@ -511,12 +521,13 @@ body {
     margin: 10px 0 0;
     color: var(--title-color);
 }
-.news .card-body .card-title a{
+
+.news .card-body .card-title a {
     transition: color 0.3s;
 }
 
 .news .divide {
-    border-top : 1px solid rgba(249, 249, 249, 0.1);
+    border-top: 1px solid rgba(249, 249, 249, 0.1);
 }
 
 .news .card-footer {
@@ -546,7 +557,7 @@ body {
 
 .news .card-footer .card-date {
     font-weight: 400;
-    
+
 }
 
 
@@ -558,6 +569,7 @@ body {
 .news .card-footer__left span {
     margin-left: 4px;
 }
+
 /*=================== footer =================*/
 .footer {
     background-color: var(--background-dark);
@@ -577,14 +589,14 @@ body {
     margin: 0 auto;
 }
 
-.footer__heading h2{
+.footer__heading h2 {
     font-size: 3.5rem;
     font-weight: 700;
     color: var(--white-color);
     margin-bottom: 24px;
 }
 
-.footer__heading p{
+.footer__heading p {
     font-size: 1.7rem;
     color: var(--white-color);
     opacity: 0.6;
@@ -611,7 +623,7 @@ body {
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     background-color: rgba(0, 0, 0, 0.2);
-    
+
 }
 
 .footer__form input {
@@ -642,7 +654,7 @@ body {
 }
 
 .footer .divide {
-    border-top : 1px solid rgba(249, 249, 249, 0.1);
+    border-top: 1px solid rgba(249, 249, 249, 0.1);
 }
 
 .footer__link {
@@ -656,7 +668,7 @@ body {
     margin-bottom: 20px;
 }
 
-.footer__item p{
+.footer__item p {
     color: #97a1a9;
     opacity: 0.8;
     font-size: 1.8rem;
@@ -669,7 +681,7 @@ body {
     font-size: 1.8rem;
 }
 
-.footer__item li:not(:last-of-type){
+.footer__item li:not(:last-of-type) {
     margin-bottom: 8px;
 }
 
@@ -752,18 +764,21 @@ body {
     font-weight: 600;
     line-height: 1;
 }
+
 /* about */
-.about img{
+.about img {
     border-radius: 10px;
     max-width: 100%;
     margin-bottom: 30px;
 }
-.about .img-down{
+
+.about .img-down {
     margin-top: 20px;
     border-radius: 10px;
 
 }
-.about .title{
+
+.about .title {
     font-size: 15px;
     font-weight: 600;
     color: grey;
@@ -771,30 +786,204 @@ body {
     line-height: 30px;
     margin-bottom: 0px !important;
     margin-top: 30px;
+    text-align: left;
 
 }
-.about h2{
+
+.about h2 {
     font-size: 35px;
     font-weight: bold;
     line-height: 50px;
 }
-.about .content{
+
+.about .content {
     color: grey;
     font-weight: 400;
 }
-.about li{
+
+.about li {
     list-style: none;
     font-size: 18px;
     font-weight: 500;
     line-height: 50px;
 
 }
-.about li a{
+
+.about li a {
     color: black;
 }
-.about li a i{
+
+.about li a i {
     background-color: #33b271;
     border-radius: 50px;
     color: white;
     padding: 2px;
+}
+
+.feature button {
+    padding: 15px 50px;
+    border-radius: 10px;
+    border: none;
+    color: var(--white-color);
+    background-color: var(--button-color);
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    outline: none !important;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+}
+
+.feature {
+    background-color: #F7F7F7;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.feature .d-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+}
+
+.feature .box-wrap {
+    padding: 30px 40px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+
+}
+
+.feature .box-wrap a {
+    font-size: 22px;
+    line-height: 22px;
+    display: block;
+    margin-top: 25px;
+}
+
+.feature h4 {
+    font-size: 15px;
+    font-weight: 600;
+    color: grey;
+    letter-spacing: 1px;
+    line-height: 30px;
+    margin-bottom: 0px !important;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.feature h2 {
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 700;
+}
+
+.feature p {
+    margin-top: 15px;
+    font-size: 17px;
+    line-height: 27px;
+    color: var(--font-color);
+    opacity: .8;
+}
+
+.service {
+    margin: 50px 0
+}
+
+.service .grids5-info img {
+    width: 100%;
+    border-top: 15px;
+}
+
+.service .grids5-info a {}
+
+.service .grids5-info .title {
+    transform: translateY(-25px);
+    font-size: 19px;
+    line-height: 28px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    background: white;
+    padding: 12px 35px;
+    display: inline-block;
+    border: 1px solid none;
+    border-radius: 10px;
+    box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
+    margin-bottom: 0 !important;
+    transition: 0.5s;
+}
+
+.service .grids5-info:hover .title {
+    color: #33b271;
+}
+
+.service .text-para {
+    color: #A5A5A5;
+}
+
+.service button {
+    padding: 8px 35px;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 600;
+    background-color: white;
+    border: 1px solid white;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.service button:hover {
+    color: #33b271;
+}
+
+.service button:focus {
+    border: 3px rgb(0 166 63 / 25%)
+}
+
+.service .title {
+    font-size: 15px;
+    font-weight: 600;
+    color: grey;
+    letter-spacing: 1px;
+    line-height: 30px;
+    margin-bottom: 0px !important;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.gallery {
+    background-color: #F8F9FA;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+.gallery .title h4 {
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 1px;
+    line-height: 30px;
+    margin-bottom: 0px !important;
+    margin-top: 30px;
+    text-align: center;
+}
+.gallery .item img{
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-bottom: 25px;
+}
+.gallery .item{
+    max-width: 33%;
+    flex: 0 0 33.33333%;
+}
+.gallery .logo img{
+    width: 100%;
+    justify-content: center;
+    padding-top: 30px;
 }
