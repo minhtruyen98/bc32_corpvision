@@ -11,9 +11,9 @@
     --title-color: #3f3a64;
     --background-color: #ffffff;
     --bg-grey-color: #F7F7F7;
-    --border-color: #eee;
     --layer-color: rgba(29, 42, 55, 0.7);
     --border-color: transparent;
+    --boder-color-light:#eee;
 }
 
 [data-theme = "dark"] {
@@ -21,9 +21,9 @@
     --title-color: #eeeeee;
     --background-color: #151421;
     --bg-grey-color: #100F19;
-    --border-color: rgba(255, 255, 255, 0.1);
     --layer-color: rgba(29, 42, 55, 0.8);
     --border-color: rgba(255, 255, 255, 0.2);
+    --boder-color-light:rgba(255, 255, 255, 0.1);
 }
 
 * {
@@ -95,4 +95,8 @@ a:hover {
     font-weight: 700;
     color: var(--title-color);
     margin: 0;
+}
+
+.section {
+    padding: 96px 0;
 }
