@@ -13,7 +13,7 @@
     --bg-grey-color: #F7F7F7;
     --layer-color: rgba(29, 42, 55, 0.7);
     --border-color: transparent;
-    --boder-color-light:#eee;
+    --border-color-light:#eee;
 }
 
 [data-theme = "dark"] {
@@ -23,7 +23,7 @@
     --bg-grey-color: #100F19;
     --layer-color: rgba(29, 42, 55, 0.8);
     --border-color: rgba(255, 255, 255, 0.2);
-    --boder-color-light:rgba(255, 255, 255, 0.1);
+    --border-color-light:rgba(255, 255, 255, 0.1);
 }
 
 * {
@@ -34,8 +34,8 @@
 
 html {
     font-size: 62.5%;
-    scroll-behavior: smooth;
-
+    scroll-behavior: smooth; 
+    /* bug khi sử dụng với back to top lib */
 }
 
 body {
@@ -100,5 +100,6 @@ a:hover {
 }
 
 .section {
-    padding: 96px 0;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
