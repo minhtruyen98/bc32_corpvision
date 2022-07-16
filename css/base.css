@@ -35,7 +35,6 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth; 
-    /* bug khi sử dụng với back to top lib */
 }
 
 body {
