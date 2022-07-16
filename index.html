@@ -32,9 +32,8 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 
   <!-- Lightbox -->
-  <link rel="stylesheet" href="./lib/lightbox2-2.11.3/dist/css/lightbox.css">
+  <link rel="stylesheet" href="./lib/lightbox2-2.11.3/dist/css/lightbox.min.css">
 
-   
   <!-- Main CSS -->
   <link rel="stylesheet" href="./css/base.css" />
   <link rel="stylesheet" href="./css/main.css" />
@@ -198,8 +197,10 @@
     <div class="container py-lg-5">
       <div class="row position-relative">
         <div class="col-lg-6">
-          <p class="title">ABOUT US</p>
-          <h2>We make the best strategies for you, Enhancing your success</h2>
+          <div class="title text-left">
+            <p>ABOUT US</p>
+            <h3>We make the best strategies for you, Enhancing your success</h3>
+          </div>
           <p class="content">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -207,16 +208,23 @@
           </p>
           <ul>
             <li>
-              <a href="#"><span><i class="fa-solid fa-check"></i></span> UI/UX Design
-                and Development</a>
+              <a href="#">
+                <i class="fa-solid fa-circle-check"></i>
+                UI/UX Design
+                and Development
+              </a>
             </li>
             <li>
-              <a href="#"><i class="fa-solid fa-check"></i> Branding Design and
-                Identity</a>
+              <a href="#">
+                <i class="fa-solid fa-circle-check"></i>
+                Branding Design and Identity
+              </a>
             </li>
             <li>
-              <a href="#"><i class="fa-solid fa-check"></i> Mobile App Design and
-                Development</a>
+              <a href="#">
+                <i class="fa-solid fa-circle-check"></i>
+                Mobile App Design and Development
+              </a>
             </li>
           </ul>
         </div>
@@ -236,7 +244,7 @@
     </div>
   </section>
   <!--==================== FEATURE =========================-->
-  <section class="feature">
+  <section class="feature section">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
@@ -277,12 +285,12 @@
     </div>
   </section>
   <!--==================== SERVICE =========================-->
-  <section class="service">
-    <div class="container py-5">
-      <h3 class="title-big text-center">
-        Always there for your care, our Services
-      </h3>
-      <div class="row mt-lg-5 mt-4 text-center justify-content-center">
+  <section class="service section">
+    <div class="container">
+      <div class="title text-center">
+        <h3>Always there for your care, our Services</h3>
+      </div>
+      <div class="row text-center justify-content-center">
         <div class="col-lg-4 col-md-6">
           <div class="grids5-info">
             <a href="#"><img src="./img/s1.jpg" alt="" /></a>
@@ -326,14 +334,13 @@
     </div>
   </section>
   <!--==================== GALLERY =========================-->
-  <section class="gallery py-5">
+  <section class="gallery section py-5">
     <div class="container py-lg-5 py-md-4 py-2">
       <div class="title text-center mb-5">
         <h4>OUR GALLERY</h3>
           <h3>Successful projects we've done
           </h3>
       </div>
-
       <div class="row">
         <div class="col-lg-4 col-md-6 item">
           <a href="./img/c1.jpg" data-lightbox="image-1" data-title="Project 1"><img src="./img/c1.jpg" alt="">
@@ -394,6 +401,7 @@
           </a>
           
         </div>
+        <div class="divide"></div>
       </div>
       <div class="logo">
         <div class="row justify-content-center">
@@ -762,7 +770,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-    <script src="./lib/lightbox2-2.11.3/dist/js/lightbox-plus-jquery.js"></script>
+  <!-- LightBox gallery -->
+  <script src="./lib/lightbox2-2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
   <!-- Owl carousel -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script>
