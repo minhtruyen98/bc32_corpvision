@@ -41,10 +41,25 @@
     .carousel-corp .carousel-item {
         height: 700px;
     }
+    /*============= responsive cho about ================*/
+    .about .col-lg-6:not(:first-of-type) {
+        margin-top: 48px;
+    }
+
+    /*============= responsive cho feature ================*/
+    .feature .col-lg-6:not(:first-of-type) {
+        margin-top: 48px;
+    }
+
+    /*============= responsive cho header ================*/
+    .service .col-lg-4:not(:last-of-type) {
+        margin-bottom: 48px;
+    }
     /*============= responsive cho skill ================*/
     .skill .col-12:not(:last-of-type) {
         margin-bottom: 48px;
     }
+    
     /*============= responsive cho footer ================*/
     .footer .mb-5 {
         margin-bottom: 48px !important;
@@ -71,7 +86,8 @@
     }
 
     .section {
-        padding: 72px 0;
+        padding-top: 64px;
+        padding-bottom: 64px;
     }
     
 }
@@ -90,13 +106,38 @@
         height: 650px;
     }
 
+    /*============= responsive cho about ================*/
+    .about .col-lg-6:not(:first-of-type) {
+        margin-top: 24px;
+    }
+
+    .about .img-down {
+        margin-bottom: 8px;
+    }
+
+    /*============= responsive cho about ================*/
+    .feature .box-wrap a {
+        font-size: 1.8rem;
+    }
+
+    /*============= responsive cho feature ================*/
+    .feature .col-lg-6:not(:first-of-type) {
+        margin-top: 24px;
+    }
+
+    .feature .box-wrap {
+        padding: 24px;
+    }
+
     /*============= responsive cho skill ================*/
     .skill .col-12:not(:last-of-type) {
         margin-bottom: 24px;
     }
+    
     /*============= responsive cho title ================*/
     .section {
-        padding: 56px 0;
+        padding-top: 56px;
+        padding-bottom: 56px;
     }
 
 }
@@ -128,6 +169,14 @@
     .carousel-corp .carousel-item {
         height: 600px;
     }
+    /*============= responsive cho feature ================*/
+    .feature .box-wrap a {
+        margin-bottom: 7px;
+    }
+
+    .feature .icon img {
+        width: 45px;
+    }
     /*============= responsive cho footer ================*/
     .footer__heading h2{
         font-size: 3rem;
@@ -143,6 +192,22 @@
 
 }
 
+@media screen and (max-width: 480px) {
+    /*============= responsive cho about ================*/
+    .about .col-lg-6 .col-6:first-of-type {
+        padding-right: 5px;
+    }
+    .about .col-lg-6 .col-6:last-of-type {
+        padding-left: 5px;
+    }
+    /*============= responsive cho gallery ================*/
+    .gallery .logo img {
+        padding: 0 12px 0;
+    }
+    .gallery .hover-content {
+        padding: 20px 32px;
+    }
+}
 @media screen and (max-width: 415px) {
     /*============= responsive cho carousel ================*/
     .carousel-corp .carousel-caption h3 {
@@ -157,6 +222,12 @@
         height: 550px;
     }
 
+    /*============= responsive cho feature ================*/
+    .feature .d-grid {
+        gap: 15px;
+    }
+
+    /*============= responsive cho footer ================*/
     .footer__item p {
         font-size: 1.7rem;
     }
@@ -176,6 +247,7 @@
     .title h3 {
         font-size: 2.6rem;
     }
+
 }
 
 @media screen and (max-width: 375px) {
@@ -192,6 +264,19 @@
     .carousel-corp .carousel-caption h3 {
         font-size: 2.7rem;
     }
+
+    /*============= responsive cho feature ================*/
+    .feature .box-wrap a {
+        margin-top: 15px;
+    }
+    .feature .d-grid {
+        grid-template-columns: 1fr;
+    }
+    /*============= responsive cho gallery ================*/
+    .gallery .logo img {
+        padding: 0 2px 0;
+    }
+
     /*============= responsive cho footer ================*/
     .footer__heading h2{
         font-size: 2.4rem;
