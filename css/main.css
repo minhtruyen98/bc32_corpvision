@@ -477,7 +477,7 @@ body {
     border-top: 15px;
 }
 
-.service .grids5-info a {}
+/* .service .grids5-info a {} */
 
 .service .grids5-info .title {
     transform: translateY(-25px);
@@ -535,41 +535,98 @@ body {
 }
 /*=================== gallery =================*/
 .gallery {
-    background-color: var(--bg-grey-color);
+    background-color: var(--background-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
+
 }
 
 .gallery .title h4 {
     font-size: 15px;
     font-weight: 600;
-    color: black;
+    color: var(--text-color);
     letter-spacing: 1px;
     line-height: 30px;
     margin-bottom: 0px !important;
     margin-top: 30px;
     text-align: center;
 }
-.gallery .item img{
+
+.gallery .item img {
     flex-shrink: 0;
     overflow: hidden;
     position: relative;
     display: block;
     width: 100%;
-    padding-bottom: 25px;
-}
-.gallery .item{
-    max-width: 33%;
-    flex: 0 0 33.33333%;
-}
-.gallery .logo img{
-    width: 100%;
-    justify-content: center;
-    padding: 48px 18px 0;
 }
 
-.gallery .divide {
-    border-top: 1px solid var(--boder-color-light);
+.gallery .item {
+    padding: 0% !important;
+    margin-bottom: 30px;
+    margin-left: 1%;
+    margin-right: 1%;
+    max-width: 30%;
+
+}
+
+
+/* .gallery .item {
+    max-width: 33%;
+    flex: 0 0 33.33333%;
+} */
+
+.gallery .logo img {
     width: 100%;
-    margin-top: 48px;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.gallery .hover-content {
+    position: absolute;
+    bottom: -100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    padding: 46px 50px;
+    color: #ffffff;
+    /* z-index: 2; */
+}
+
+.gallery .item:hover .hover-content {
+    position: absolute;
+    bottom: 0%;
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.gallery .hover-layout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(29, 42, 55, 0.7);
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+    /* z-index: 1; */
+}
+
+.gallery .item:hover .hover-layout {
+    opacity: 1;
+    visibility: visible;
+    overflow: hidden;
+
+}
+
+#about {
+    scroll-behavior: smooth;
 }
 
 /*=================== skill =================*/
@@ -989,3 +1046,225 @@ body {
     font-weight: 600;
     line-height: 1;
 }
+
+/* about */
+.about img {
+    border-radius: 10px;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.about .img-down {
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+
+.about .title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--title-color);
+    letter-spacing: 1px;
+    line-height: 30px;
+    margin-bottom: 0px !important;
+    margin-top: 30px;
+    text-align: left;
+
+}
+
+.about h2 {
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 50px;
+    color: var(--text-color)
+}
+
+.about .content {
+    color: var(--text-color);
+    ;
+    font-weight: 400;
+}
+
+.about li {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 50px;
+
+
+}
+
+.about li a {
+    color: var(--text-color);
+}
+
+.about li a i {
+    background-color: #33b271;
+    border-radius: 50px;
+    color: white;
+    padding: 2px;
+}
+
+.feature button {
+    padding: 15px 50px;
+    border-radius: 10px;
+    border: none;
+    color: var(--white-color);
+    background-color: var(--button-color);
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    outline: none !important;
+    border: 1px solid transparent;
+    transition: 0.5s;
+
+}
+
+.feature button:hover {
+    background-color: #008030;
+}
+
+.feature {
+    background-color: var(--bg-grey-color);  
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.feature .d-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+}
+
+.feature .box-wrap {
+    padding: 30px 40px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+
+}
+
+.feature .box-wrap a {
+    font-size: 22px;
+    line-height: 22px;
+    display: block;
+    margin-top: 25px;
+    color: var(--text-color);
+    
+}
+
+.feature h4 {
+    font-size: 15px;
+    font-weight: 600;
+    color: grey;
+    letter-spacing: 1px;
+    line-height: 30px;
+    margin-bottom: 0px !important;
+    margin-top: 30px;
+    text-align: left;
+    color: var(--text-color);
+}
+
+.feature h2 {
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.feature p {
+    margin-top: 15px;
+    font-size: 17px;
+    line-height: 27px;
+    color: var(--text-color);
+    opacity: .8;
+}
+
+.feature .grids-1 {
+    transition: all 0.5s;
+    background-color:  var(--background-color);
+
+
+}
+
+.feature .grids-1:hover {
+    transform: translateY(5%);
+    box-shadow: -1px 11px 22px -5px rgba(0, 0, 0, 0.58);
+}
+
+.service {
+    margin: 50px 0
+}
+
+.service .grids5-info img {
+    width: 100%;
+    border-top: 15px;
+}
+
+/* .service .grids5-info a {} */
+.service .title-big{
+    color: var(--text-color);
+    font-size: 35px;
+
+}
+
+
+.service .grids5-info .title {
+    transform: translateY(-25px);
+    font-size: 19px;
+    line-height: 28px;
+    font-weight: 600;
+    color:var(--text-color);
+
+    text-align: center;
+    background: var(--background-color);
+    padding: 12px 35px;
+    display: inline-block;
+    border: 1px solid none;
+    border-radius: 10px;
+    box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
+    margin-bottom: 0 !important;
+    transition: 0.5s;
+}
+
+.service .grids5-info:hover .title {
+    color: #33b271;
+}
+
+.service .text-para {
+    color: var(--text-color);
+}
+
+.service button {
+    padding: 8px 35px;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 600;
+    background-color: var(--background-color);
+    border: 1px solid var(--background-color);
+    transition: 0.5s;
+    border-radius: 10px;
+    color: var(--text-color);
+}
+
+.service button:hover {
+    color: #33b271;
+}
+
+.service button:focus {
+    border: 3px rgb(0 166 63 / 25%)
+}
+
+.service .title {
+    font-size: 15px;
+    font-weight: 600;
+    color: grey;
+    letter-spacing: 1px;
+    line-height: 30px;
+    margin-bottom: 0px !important;
+    margin-top: 30px;
+    text-align: left;
+}
+
+
