@@ -6,7 +6,7 @@ function handleEvent(){
     const searchBtn = $('.header__search');
     const closeBtn = $('.search__form .close-icon');
     const searchForm = $('.search__form');
-    let isSearch = false;
+    const backToTop = $('.backToTop');
     let isMenuOpen = false;
     //xử lý header khi scroll
     document.onscroll = function(){
@@ -20,6 +20,13 @@ function handleEvent(){
             Header.style.paddingTop = 15 + 'px';
             Header.style.paddingBottom = 15 + 'px';
             Header.classList.remove('active');
+        }
+        //back to top
+        if(scrollTop >= 500){
+            backToTop.classList.add('active')
+        }
+        else{
+            backToTop.classList.remove('active')
         }
     }
     // xử lý khi open menu của header
