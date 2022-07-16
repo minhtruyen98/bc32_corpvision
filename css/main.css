@@ -472,6 +472,9 @@ body {
 .service .grids5-info img {
     width: 100%;
     border-top: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
 }
 
 .service .grids5-info .title {
@@ -1021,6 +1024,10 @@ body {
 
 .footer__copyright a:hover {
     color: var(--white-color);
+}
+
+.footer__logo{
+    margin-right: 2%;
 }
 
 .footer__logo i {
